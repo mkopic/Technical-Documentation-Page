@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="svgstyle.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>JS Documentation</title>
+  </head>
+  <body>
+ <main id="main-doc">
+   <nav id="navbar">
+    <header class="navbar-title-box">
+      <h2 class="navbar-title">JS Documentation</h2>
+    </header>
+    <ul class="nav-bar">
+      <li><a class="nav-link" href="#home">JavaScript</a></li>
+      <li><a class="nav-link" href="#introduction">Introduction</a></li>
+      <li><a class="nav-link" href="#functions">JS Functions</a></li>
+      <li><a class="nav-link" href="#defining_a_function">Defining a function</a></li>
+      <li><a class="nav-link" href="#function_invocation">Function Invocation</a></li>
+      <li><a class="nav-link" href="#js_object">JS Object</a></li>
+      <li><a class="nav-link" href="#object_methods">Object Methods</a></li>
+    </ul>
+  </nav>
+  <div id="technical-box">
+     <div class="container-img" id="home">
+    <img src="https://i.postimg.cc/Dw7SPGM5/slika-1.png" />
+    <img src="https://i.postimg.cc/jjzk0GXR/slika-2.png"/>
+    <img src="https://i.postimg.cc/QCWTvrQb/slika-3.png"/>
+  </div>
+    <section class="main-section" id="title-box">
+      <header class="title">JavaScript</header>
+      <p>
+        JavaScript is a cross-platform, object-oriented scripting language
+        used to make webpages interactive
+      </p>
+
+    </section>
+    <section class="main-section" id="introduction">
+      <header class="subtitle">Introduction
+        <hr>
+      </header>
+
+      <p class="subtitle-description">
+        JavaScript lies at the heart of almost every modern web application.
+        JavaScript was introduce in 1995. It is important to say that
+        JavaScrip has almost nothing to do with tehe programming language
+        Java. </p>
+      <p class="subtitle-description">Before you start out with more complex javascripts you should understand the basics.</p>
+       <p class="subtitle-description">There are 8 basic data types in JavaScript:
+               <ul class="ul-p">
+                 <li>Number</li>
+                 <li>String</li>
+                 <li>Boolean (logical type)</li>
+                 <li>Undefined</li>
+                 <li>Null</li>
+                 <li>Objects and Symbols</li>
+                 <li>Bigint</li>
+               </ul>
+             </p>
+
+    </section>
+    <section class="main-section" id="functions">
+      <header class="subtitle">JS Functions
+        <hr>
+      </header>
+      <p class="subtitle-description">
+        Functions are the bread and butter of JavaScript programming. A JavsScript function is a block of code. Function
+        is designed to perform a particular task.
+      </p>
+      <span>Example:</span>
+      <pre>
+            <code>
+            function square(a, b) {
+            return a * b;  
+            }
+            </code>
+            </pre>
+    </section>
+    <section class="main-section" id="defining_a_function">
+      <header class="subtitle">Defining a function
+        <hr>
+      </header>
+      <p class="subtitle-description">
+        A JavaScript function is defined with the <code>function</code> keyword, followed by a name, followed by parentheses ().</p>
+      <p class="subtitle-description">
+        The parentheses may include parameter names separated by commas:
+        (parameter1, parameter2, ...)</p>
+      <p class="subtitle-description">
+        The code to be executed, by the function, is placed inside curly brackets: {}
+      </p>
+      <span>Example:</span>
+      <pre>
+           <code>
+              const square = function(a){
+                return a * a;
+              };
+
+              console.log(square(5));
+              // 25
+           </code>
+            </pre>
+
+    </section>
+    <section class="main-section" id="function_invocation">
+      <header class="subtitle">Function Invocation
+        <hr>
+      </header>
+      <p class="subtitle-description">
+        The code inside the function will execute when "something" calls the function:
+      <ul class="ul-p">
+        <li>When an event occurs</li>
+        <li>When it is called from JavaScript code</li>
+        <li>Automatically</li>
+      </ul>
+      </p>
+    </section>
+    <section class="main-section" id="js_object">
+      <header class="subtitle">JS Object
+        <hr>
+      </header>
+      <p class="subtitle-description">Objects are variables too. But objects can contain many values.</p>
+      <span>Example:</span>
+      <pre>
+           <code>
+              var name = "John"
+            </code>
+            </pre>
+    </section>
+    <section class="main-section" id="object_methods">
+      <header class="subtitle">Object Methods
+        <hr>
+      </header>
+      <p class="subtitle-description">Object can have methods.</p>
+      <p class="subtitle-description">Methods are action that can be performed on object.</p>
+      <p class="subtitle-description">They are stored in properties as function definitions.</p>
+      <span>Example:</span>
+      <pre>
+           <code>
+              var person = {
+              firstName: "Petar",
+              lastName : "Peric",
+              id       : 12345,
+              fullName : function() {
+             return this.firstName + " " + this.lastName;
+              }
+            };
+           </code>
+            </pre>
+    </section>
+  </div>
+
+</main>
+  
+  </body>
+</html>
